@@ -39,7 +39,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-06 14:29:06.355091",
+ "modified": "2022-07-14 19:24:50.446131",
  "modified_by": "Administrator",
  "module": "Gym Membership",
  "name": "Locker",
@@ -54,7 +54,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "Gym Admin",
    "share": 1,
    "write": 1
   }

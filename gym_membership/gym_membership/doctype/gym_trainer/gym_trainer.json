@@ -67,7 +67,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-11 19:28:44.156996",
+ "modified": "2022-07-14 19:29:41.613975",
  "modified_by": "Administrator",
  "module": "Gym Membership",
  "name": "Gym Trainer",
@@ -82,7 +82,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "Gym Admin",
    "share": 1,
    "write": 1
   }
