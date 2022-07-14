@@ -1,28 +1,30 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
- "autoname": "S-.####",
- "creation": "2022-07-14 15:36:46.361679",
+ "autoname": "field:slot",
+ "creation": "2022-07-14 17:06:59.932743",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "slot_name"
+  "slot"
  ],
  "fields": [
   {
-   "fieldname": "slot_name",
-   "fieldtype": "Time",
-   "label": "Slot Name"
+   "fieldname": "slot",
+   "fieldtype": "Data",
+   "label": "Slot",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-14 15:36:46.361679",
+ "modified": "2022-07-14 17:10:02.099187",
  "modified_by": "Administrator",
  "module": "Gym Membership",
- "name": "Slot",
- "naming_rule": "Expression (old style)",
+ "name": "Time Slots",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

@@ -9,7 +9,6 @@
  "field_order": [
   "amenity_name",
   "amenities_description",
-  "booking_slot",
   "amenitiy_image",
   "amended_from"
  ],
@@ -17,18 +16,13 @@
   {
    "fieldname": "amenity_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Amenity Name"
   },
   {
    "fieldname": "amenities_description",
-   "fieldtype": "Data",
+   "fieldtype": "Text Editor",
    "label": "Amenities Description"
-  },
-  {
-   "fieldname": "booking_slot",
-   "fieldtype": "Table MultiSelect",
-   "label": "Booking Slot",
-   "options": "Slot Time"
   },
   {
    "fieldname": "amenitiy_image",
@@ -46,9 +40,8 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2022-07-14 15:33:28.388028",
+ "modified": "2022-07-14 17:30:01.743861",
  "modified_by": "Administrator",
  "module": "Gym Membership",
  "name": "Amenities",
@@ -68,6 +61,7 @@
    "write": 1
   }
  ],
+ "search_fields": "amenity_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

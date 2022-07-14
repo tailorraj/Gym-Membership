@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestSlot(unittest.TestCase):
+class TestTimeSlots(unittest.TestCase):
 	pass

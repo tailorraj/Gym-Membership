@@ -107,7 +107,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-14 15:52:11.637745",
+ "modified": "2022-07-14 17:15:21.314468",
  "modified_by": "Administrator",
  "module": "Gym Membership",
  "name": "Gym Member",
@@ -127,6 +127,7 @@
    "write": 1
   }
  ],
+ "search_fields": "full_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
