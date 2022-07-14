@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "GR-.####",
+ "creation": "2022-07-14 10:34:32.611205",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "members_id",
+  "first_name",
+  "last_name",
+  "plan",
+  "from_date",
+  "to_date",
+  "membership_fee",
+  "paid_amount",
+  "column_break_9",
+  "trainer",
+  "trainer_first_name",
+  "trainer_last_name",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "members_id",
+   "fieldtype": "Link",
+   "label": "Members Id",
+   "options": "Gym Member"
+  },
+  {
+   "fieldname": "plan",
+   "fieldtype": "Link",
+   "label": "Plan",
+   "options": "Membership"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Data",
+   "label": "Paid Amount"
+  },
+  {
+   "fetch_from": "plan.price",
+   "fieldname": "membership_fee",
+   "fieldtype": "Float",
+   "label": "Membership Fee"
+  },
+  {
+   "fetch_from": "members_id.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "members_id.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer",
+   "options": "Gym Trainer"
+  },
+  {
+   "fetch_from": "trainer.first_name",
+   "fieldname": "trainer_first_name",
+   "fieldtype": "Data",
+   "label": "Trainer First Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "trainer.last_name",
+   "fieldname": "trainer_last_name",
+   "fieldtype": "Data",
+   "label": "Trainer Last Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Registration",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-14 15:57:36.088888",
+ "modified_by": "Administrator",
+ "module": "Gym Membership",
+ "name": "Gym Registration",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

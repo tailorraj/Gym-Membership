@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-05 16:53:14.375148",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "opening_time",
+  "close_time",
+  "locker_per_day_charge"
+ ],
+ "fields": [
+  {
+   "fieldname": "locker_per_day_charge",
+   "fieldtype": "Currency",
+   "label": "Locker Per Day Charge"
+  },
+  {
+   "fieldname": "opening_time",
+   "fieldtype": "Time",
+   "label": "Opening Time"
+  },
+  {
+   "fieldname": "close_time",
+   "fieldtype": "Time",
+   "label": "Close Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-07-11 11:27:32.386352",
+ "modified_by": "Administrator",
+ "module": "Gym Membership",
+ "name": "Gym Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

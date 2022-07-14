@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "MT-.####",
+ "creation": "2022-07-05 16:51:07.439221",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "members_id",
+  "date",
+  "weight",
+  "calories",
+  "time_spent_in_gym",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "members_id",
+   "fieldtype": "Link",
+   "label": "Members ID",
+   "options": "Gym Member"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "calories",
+   "fieldtype": "Float",
+   "label": "Calories"
+  },
+  {
+   "description": "In Minutes",
+   "fieldname": "time_spent_in_gym",
+   "fieldtype": "Float",
+   "label": "Time Spent In Gym"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Members Tracking",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-07 18:41:23.601408",
+ "modified_by": "Administrator",
+ "module": "Gym Membership",
+ "name": "Members Tracking",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

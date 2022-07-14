@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LB-.####",
+ "creation": "2022-07-05 16:46:28.045224",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "members_id",
+  "date",
+  "locker",
+  "discount",
+  "paid_amount",
+  "column_break_6",
+  "member_email",
+  "from_date",
+  "to_date",
+  "days",
+  "locker_fees",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "members_id",
+   "fieldtype": "Link",
+   "label": "Members ID",
+   "options": "Gym Member"
+  },
+  {
+   "fetch_from": "members_id.joining_date",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "locker",
+   "fieldtype": "Link",
+   "label": "Locker",
+   "options": "Locker"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Currency",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Locker Booking",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "days",
+   "fieldtype": "Int",
+   "label": "Days"
+  },
+  {
+   "fieldname": "locker_fees",
+   "fieldtype": "Currency",
+   "label": "Total Locker Fees"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "members_id.email",
+   "fieldname": "member_email",
+   "fieldtype": "Data",
+   "label": "Member Email",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-11 12:27:22.963385",
+ "modified_by": "Administrator",
+ "module": "Gym Membership",
+ "name": "Locker Booking",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

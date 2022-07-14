@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CB-.####",
+ "creation": "2022-07-05 16:42:12.093436",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "members_id",
+  "date",
+  "class",
+  "class_fee",
+  "discount",
+  "paid_amount",
+  "instructor",
+  "column_break_8",
+  "member_email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "members_id",
+   "fieldtype": "Link",
+   "label": "Members ID ",
+   "options": "Gym Member"
+  },
+  {
+   "fetch_from": "members_id.joining_date",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Link",
+   "label": "Class",
+   "options": "Class"
+  },
+  {
+   "fetch_from": "class.class_fee",
+   "fieldname": "class_fee",
+   "fieldtype": "Currency",
+   "label": "Class Fee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Currency",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount"
+  },
+  {
+   "fetch_from": "class.gym_trainer",
+   "fieldname": "instructor",
+   "fieldtype": "Link",
+   "label": "Instructor",
+   "options": "Gym Trainer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Class Booking",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "members_id.email",
+   "fieldname": "member_email",
+   "fieldtype": "Data",
+   "label": "Member Email",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-11 12:25:23.895433",
+ "modified_by": "Administrator",
+ "module": "Gym Membership",
+ "name": "Class Booking",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

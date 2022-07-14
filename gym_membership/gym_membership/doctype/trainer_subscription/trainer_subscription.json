@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:members_id",
+ "creation": "2022-07-05 16:32:36.779534",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "members_id",
+  "date",
+  "trainer",
+  "trainer_fee",
+  "discount",
+  "paid_amount",
+  "column_break_7",
+  "member_email",
+  "from_date",
+  "to_date",
+  "number_of_month",
+  "total_fees",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "members_id",
+   "fieldtype": "Link",
+   "label": "Members ID",
+   "options": "Gym Member",
+   "unique": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer",
+   "options": "Gym Trainer"
+  },
+  {
+   "fetch_from": "trainer.personal_training_fee",
+   "fieldname": "trainer_fee",
+   "fieldtype": "Currency",
+   "label": "Trainer Fee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Currency",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Float",
+   "label": "Paid Amount"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Trainer Subscription",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_month",
+   "fieldtype": "Select",
+   "label": "Number Of Month",
+   "options": "\n3\n6\n12"
+  },
+  {
+   "fieldname": "total_fees",
+   "fieldtype": "Currency",
+   "label": "Total fees"
+  },
+  {
+   "fetch_from": "members_id.email",
+   "fieldname": "member_email",
+   "fieldtype": "Data",
+   "label": "Member Email",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-11 12:28:37.819350",
+ "modified_by": "Administrator",
+ "module": "Gym Membership",
+ "name": "Trainer Subscription",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
