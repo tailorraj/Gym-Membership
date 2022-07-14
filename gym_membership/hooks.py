@@ -46,6 +46,30 @@ app_license = "MIT"
 # role_home_page = {
 #	"Role": "home_page"
 # }
+fixtures = [
+    {"dt": "Role", "filters": [
+        [
+            "name", "in", [
+                "Gym Member",
+                "Gym Admin",
+                "Gym Trainer"
+            ]
+        ]
+    ]},
+    {"dt": "Web Page", "filters": [
+        [
+            "name", "in", [
+                "class-description"
+                ,"trainer-card"
+                ,"trainer-description"
+                ,"trainer-card-view"
+                ,"gym-home-page"
+                ,"class-card"
+            ]
+        ]
+    ]}
+]
+
 
 # Generators
 # ----------

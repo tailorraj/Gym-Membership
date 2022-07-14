@@ -24,7 +24,9 @@
   {
    "fieldname": "price",
    "fieldtype": "Float",
-   "label": "Price"
+   "in_list_view": 1,
+   "label": "Price",
+   "reqd": 1
   },
   {
    "fieldname": "description",
@@ -50,7 +52,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-14 19:24:02.223583",
+ "modified": "2022-07-14 20:55:27.335073",
  "modified_by": "Administrator",
  "module": "Gym Membership",
  "name": "Membership",

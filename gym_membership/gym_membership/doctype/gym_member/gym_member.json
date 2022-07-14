@@ -21,7 +21,8 @@
   "expiry_date",
   "current_height",
   "current_weight",
-  "goal"
+  "goal",
+  "user"
  ],
  "fields": [
   {
@@ -37,8 +38,10 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Full Name",
    "read_only": 1,
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -50,8 +53,10 @@
   {
    "fieldname": "current_trainer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Current Trainer",
-   "options": "Gym Trainer"
+   "options": "Gym Trainer",
+   "reqd": 1
   },
   {
    "fieldname": "address",
@@ -75,39 +80,52 @@
   {
    "fieldname": "joining_date",
    "fieldtype": "Date",
-   "label": "Joining Date"
+   "in_list_view": 1,
+   "label": "Joining Date",
+   "reqd": 1
   },
   {
    "fieldname": "current_height",
    "fieldtype": "Data",
-   "label": "Current Height"
+   "label": "Current Height",
+   "reqd": 1
   },
   {
    "fieldname": "current_weight",
    "fieldtype": "Data",
-   "label": "Current Weight"
+   "label": "Current Weight",
+   "reqd": 1
   },
   {
    "fieldname": "goal",
    "fieldtype": "Select",
    "label": "Goal",
-   "options": "\nWeight Loss\nMuscles Gain"
+   "options": "\nWeight Loss\nMuscles Gain",
+   "reqd": 1
   },
   {
    "fieldname": "expiry_date",
    "fieldtype": "Date",
-   "label": "Expiry Date"
+   "in_list_view": 1,
+   "label": "Expiry Date",
+   "reqd": 1
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
    "options": "Active\nExpiry"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-14 18:50:02.738527",
+ "modified": "2022-07-14 20:53:27.888866",
  "modified_by": "Administrator",
  "module": "Gym Membership",
  "name": "Gym Member",
@@ -132,6 +150,18 @@
    "read": 1,
    "report": 1,
    "role": "Gym Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
    "share": 1,
    "write": 1
   }

@@ -10,12 +10,15 @@
   "first_name",
   "last_name",
   "personal_training_fee",
+  "contact_number",
+  "email",
   "rating",
   "description",
   "column_break_6",
   "image",
   "status",
-  "total_feddback"
+  "total_feddback",
+  "user"
  ],
  "fields": [
   {
@@ -32,7 +35,9 @@
   {
    "fieldname": "personal_training_fee",
    "fieldtype": "Currency",
-   "label": "Monthly Personal Training Fee"
+   "in_list_view": 1,
+   "label": "Monthly Personal Training Fee",
+   "reqd": 1
   },
   {
    "fieldname": "rating",
@@ -63,11 +68,27 @@
    "fieldname": "total_feddback",
    "fieldtype": "Int",
    "label": "Total Feedback"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-14 19:29:41.613975",
+ "modified": "2022-07-14 21:24:12.925530",
  "modified_by": "Administrator",
  "module": "Gym Membership",
  "name": "Gym Trainer",

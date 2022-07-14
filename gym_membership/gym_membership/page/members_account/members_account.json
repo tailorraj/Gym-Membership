@@ -4,7 +4,7 @@
  "docstatus": 0,
  "doctype": "Page",
  "idx": 0,
- "modified": "2022-07-13 22:39:59.030034",
+ "modified": "2022-07-14 20:19:28.351019",
  "modified_by": "Administrator",
  "module": "Gym Membership",
  "name": "members-account",
@@ -14,9 +14,6 @@
  "roles": [
   {
    "role": "Gym Member"
-  },
-  {
-   "role": "Gym Admin"
   }
  ],
  "script": null,

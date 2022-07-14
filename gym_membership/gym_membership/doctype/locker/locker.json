@@ -27,19 +27,23 @@
   {
    "fieldname": "current_user",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Current User",
-   "options": "Gym Member"
+   "options": "Gym Member",
+   "reqd": 1
   },
   {
    "fieldname": "last_user",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Last User",
-   "options": "Gym Member"
+   "options": "Gym Member",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-14 19:24:50.446131",
+ "modified": "2022-07-14 20:58:22.689864",
  "modified_by": "Administrator",
  "module": "Gym Membership",
  "name": "Locker",

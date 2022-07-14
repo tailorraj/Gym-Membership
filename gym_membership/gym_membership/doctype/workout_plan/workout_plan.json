@@ -27,8 +27,10 @@
   {
    "fieldname": "plan_creator",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Plan Creator ",
-   "options": "Gym Trainer"
+   "options": "Gym Trainer",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_4",
@@ -43,7 +45,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-14 19:16:54.412654",
+ "modified": "2022-07-14 20:59:07.680829",
  "modified_by": "Administrator",
  "module": "Gym Membership",
  "name": "WorkOut Plan",
