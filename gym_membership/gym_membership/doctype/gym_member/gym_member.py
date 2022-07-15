@@ -1,7 +1,6 @@
 # Copyright (c) 2022, Raaj Tailor and contributors
 # For license information, please see license.txt
 
-from wsgiref.validate import validator
 import frappe
 from frappe.model.document import Document
 
