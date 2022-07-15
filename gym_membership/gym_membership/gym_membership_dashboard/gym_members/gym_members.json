@@ -1,0 +1,40 @@
+{
+ "cards": [
+  {
+   "card": "Total Enrolled Members"
+  },
+  {
+   "card": "Total Revenue"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Monthwise Gym Members",
+   "width": "Half"
+  },
+  {
+   "chart": "Trainer",
+   "width": "Half"
+  },
+  {
+   "chart": "Membership",
+   "width": "Half"
+  },
+  {
+   "chart": "Most Booked Class",
+   "width": "Half"
+  }
+ ],
+ "creation": "2022-07-07 14:04:26.736019",
+ "dashboard_name": "Gym Members ",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2022-07-15 12:31:14.649964",
+ "modified_by": "Administrator",
+ "module": "Gym Membership",
+ "name": "Gym Members",
+ "owner": "Administrator"
+}
