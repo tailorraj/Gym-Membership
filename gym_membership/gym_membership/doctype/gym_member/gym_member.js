@@ -15,29 +15,29 @@ frappe.ui.form.on('Gym Member', {
 	    }
 	},
 	membership_type:function(frm){
-	    if(frm.doc.membership_type =="MS-07-22-01"){
+	    if(frm.doc.membership_type =="Bronze Membership"){
 	        frm.set_value('expiry_date',frappe.datetime.add_months(frm.doc.joining_date, 3));
 	        frm.refresh_field('expiry_date');
 	    }
-	    else if(frm.doc.membership_type =="MS-07-22-02"){
+	    else if(frm.doc.membership_type =="Sliver Membership"){
 	        frm.set_value('expiry_date',frappe.datetime.add_months(frm.doc.joining_date, 6));
 	        frm.refresh_field('expiry_date');
 	    }
-	     else if(frm.doc.membership_type =="MS-07-22-03"){
+	     else if(frm.doc.membership_type =="Golden Membership"){
 	        frm.set_value('expiry_date',frappe.datetime.add_months(frm.doc.joining_date, 12));
 	        frm.refresh_field('expiry_date');
 	    }
 	},
 	joining_date:function(frm){
-	    if(frm.doc.membership_type =="MS-07-22-01"){
+	    if(frm.doc.membership_type =="Bronze Membership"){
 	        frm.set_value('expiry_date',frappe.datetime.add_months(frm.doc.joining_date, 3));
 	        frm.refresh_field('expiry_date');
 	    }
-	    else if(frm.doc.membership_type =="MS-07-22-02"){
+	    else if(frm.doc.membership_type =="Sliver Membership"){
 	        frm.set_value('expiry_date',frappe.datetime.add_months(frm.doc.joining_date, 6));
 	        frm.refresh_field('expiry_date');
 	    }
-	     else if(frm.doc.membership_type =="MS-07-22-03"){
+	     else if(frm.doc.membership_type =="Golden Membership"){
 	        frm.set_value('expiry_date',frappe.datetime.add_months(frm.doc.joining_date, 12));
 	        frm.refresh_field('expiry_date');
 	    }
