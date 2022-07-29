@@ -39,7 +39,18 @@ frappe.StockQuery = class StockQuery {
 					fieldname: 'remaining_days'
 				},
 				{
+					fieldtype: 'Column Break'
+				},
+				{
+					label:"Locker Booking Detail",
+					fieldtype: 'HTML',
+					fieldname: 'locker_doc'
+				},
+				{
 					fieldtype: 'Section Break'
+				},
+				{
+					fieldtype: 'Column Break'
 				},
 				{
 					label:"Allocated Trainer",
@@ -78,10 +89,12 @@ frappe.StockQuery = class StockQuery {
 		console.log(member_data.message[1])
 		console.log(member_data.message[2])
 		console.log(member_data.message[3])
+		console.log(member_data.message[console.log(member_data.message[3])])
 		let active_plan_html = '<div class="card" style="width: 18rem;"> <div class="card-body"> <h5 class="card-title">Active Plan</h5> <h6 class="card-subtitle mb-2 text-muted">'+member_data.message[0].plan+'</h6> </div></div>'
 		let remaining_days = '<div class="card" style="width: 18rem;"> <div class="card-body"> <h5 class="card-title">Remaining Day </h5> <h6 class="card-subtitle mb-2 text-muted">'+member_data.message[1]+'</h6> </div></div>'
+		let locker = '<div class="card" style="width: 18rem;"> <div class="card-body"> <h5 class="card-title">Allocated Locker</h5> <h6 class="card-subtitle mb-2 text-muted">'+member_data.message[4]['name']+'</h6> </div></div>'
 		var past_plan_html_content = '';
-		past_plan_html_content += '<div class="frappe-card"><h4>Past Plan</h4><table class="table"><thead><tr><th>Plan</th><th>Expire Date</th><th>Trainer</th></tr></thead><tbody>';
+		past_plan_html_content += '<div class="frappe-card" style="margin-top:30px;width:83%;"><h4>Past Plan</h4><table class="table"><thead><tr><th>Plan</th><th>Expire Date</th><th>Trainer</th></tr></thead><tbody>';
 		member_data.message[2].forEach(i =>{
 			console.log(i)
 			
@@ -95,12 +108,13 @@ frappe.StockQuery = class StockQuery {
 			'</tr>';
 			
 		})
-		let trainer = '<div class="card" style="width: 18rem;"> <div class="card-body"> <h5 class="card-title">Trainer Detail </h5> <p class="card-text">Trainer Name:'+member_data.message[3].first_name+'</p><p class="card-text">Trainer Contact:'+member_data.message[3].contact_number+'</p><p class="card-text">Trainer Email:'+member_data.message[3].email+'</p><p class="card-text">Trainer Description:'+member_data.message[3].description+'</p></div></div>'
+		let trainer = '<div class="card" style="width: 28rem;margin-top:30px;"> <div class="frappe-card"> <h5 class="card-title">Trainer Detail </h5> <p class="card-text">Trainer Name: <b>'+member_data.message[3].first_name+'</b></p><p class="card-text">Trainer Contact: <b>'+member_data.message[3].contact_number+'</b></p><p class="card-text">Trainer Email: <b>'+member_data.message[3].email+'</b></p><p class="card-text">Trainer Description: <b>'+member_data.message[3].description+'</b></p></div></div>'
 		
 		this.form.get_field('active_plan').html(active_plan_html);
 		this.form.get_field('remaining_days').html(remaining_days);
 		this.form.get_field('trainer').html(trainer);
 		this.form.get_field('past_plan').html(past_plan_html_content);
+		this.form.get_field('locker_doc').html(locker);
 	}
 	set_active_plan(){
 		

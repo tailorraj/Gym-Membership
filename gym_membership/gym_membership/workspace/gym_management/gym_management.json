@@ -1,6 +1,15 @@
 {
- "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Gym Management</span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Transactions\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}}]",
+ "charts": [
+  {
+   "chart_name": "Calories Tracking",
+   "label": "Calories Tracking"
+  },
+  {
+   "chart_name": "Weight Tracking",
+   "label": "Weight Tracking"
+  }
+ ],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Gym Management</span>\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Calories Tracking\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Weight Tracking\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"My Account\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Transactions\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
  "creation": "2022-07-06 14:12:23.327727",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -203,9 +212,47 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Membership Monthly Revenue Report",
+   "link_count": 0,
+   "link_to": "Membership Monthly Revenue Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Most Booked Classes",
+   "link_count": 0,
+   "link_to": "Most Booked Classes",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Members Tracking Report",
+   "link_count": 0,
+   "link_to": "Members Tracking Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-07-15 10:59:56.032799",
+ "modified": "2022-07-16 19:26:43.886753",
  "modified_by": "Administrator",
  "module": "Gym Membership",
  "name": "Gym Management",
@@ -222,6 +269,14 @@
   }
  ],
  "sequence_id": 1.0,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "My Account",
+   "link_to": "members-account",
+   "type": "Page"
+  }
+ ],
  "title": "Gym Management"
 }
