@@ -42,7 +42,8 @@
   {
    "fieldname": "rating",
    "fieldtype": "Rating",
-   "label": "Rating"
+   "label": "Rating",
+   "read_only": 1
   },
   {
    "fieldname": "description",
@@ -88,7 +89,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-14 21:24:12.925530",
+ "modified": "2022-07-29 11:17:22.821857",
  "modified_by": "Administrator",
  "module": "Gym Membership",
  "name": "Gym Trainer",
