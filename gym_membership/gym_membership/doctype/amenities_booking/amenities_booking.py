@@ -6,7 +6,8 @@ from frappe.model.document import Document
 
 class AmenitiesBooking(Document):
 	def on_submit(self):
-		booking = frappe.db.get_value("Amenities Booking",{"slot":self.slot,"date":self.date,"amenity":self.amenity,"docstatus":1},"name")
+		booking = frappe.db.get_value("Amenities Booking",{"slot":self.slot,"date":self.date,"amenity":self.amenity,"docstatus":1,"name":["!=",self.name]},"name")
+		# frappe.msgprint(str(booking))
 		if booking:
 			frappe.throw("Amenitiy is already Booked!")
 
